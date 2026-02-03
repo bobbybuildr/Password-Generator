@@ -45,6 +45,13 @@ function generatePasswords() {
       clickToCopy.textContent = "Click to copy"
     }, 2000)
   })
+  passwordContainer2.addEventListener("click", function() {
+    navigator.clipboard.writeText(pass2)
+    clickToCopy.textContent = "Copied"
+    clickToCopyTimer = setTimeout(function() {
+      clickToCopy.textContent = "Click to copy"
+    }, 2000)
+  })
 
   clickToCopy.textContent = "Click to copy"
 }
