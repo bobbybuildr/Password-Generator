@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Simple Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Generate a<br><span class="g-title">random password</span></h1>
+    <p class="tagline">Never use an insecure password again.</p>
+    <div class="wrapper">
+      <button id="generate-btn">Generate passwords</button>
+      <div class="options">
+        <div class="slider-container">
+          <input type="range" min="10" max="20" value="15" class="slider" id="pw-length-slider">
+          <p>Length: <span id="password-length"></span></p>
+        </div>
+        <div class="switches-container">
+          <div class="switch-wrapper">
+            <p>Use numbers:</p>
+            <label class="switch">
+              <input type="checkbox" id="numbers-switch" checked>
+              <span class="switch-slider round"></span>
+            </label>
+          </div>
+          <div class="switch-wrapper">
+            <p>Use symbols:</p>
+            <label class="switch">
+              <input type="checkbox" id="symbols-switch" checked>
+              <span class="switch-slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="passwords">
+      <div class="password" id="pw1"></div>
+      <div class="password" id="pw2"></div>
+    </div>
+    <p id="click-to-copy"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
