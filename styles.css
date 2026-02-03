@@ -174,11 +174,16 @@ input:checked + .switch-slider:before {
   border: 0;
   border-radius: 5px;
   background-color: #10B981;
+  transition: background-color .2s;
   font-family: "Roboto", sans-serif;
   font-size: 1.25em;
   font-weight: 400;
   color: #fff;
+  text-shadow: 1px 1px 1px #1F2937;
   cursor: pointer;
+}
+#generate-btn:hover {
+  background-color: #16cc8f;
 }
 
 .passwords {
