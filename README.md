@@ -1,5 +1,5 @@
 # Password Generator
 A simple password generator
 
-# Tech
+## Tech
 HTML / CSS / JavaScript
