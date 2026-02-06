@@ -54,6 +54,10 @@ function generatePasswords() {
   })
 
   clickToCopy.textContent = "Click to copy"
+
+  //styling
+  passwordContainer1.classList.add("active-pass")
+  passwordContainer2.classList.add("active-pass")
 }
 
 function getRandomChar(inclNum, inclSym) {
