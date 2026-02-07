@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generate secure random passwords with customizable length and character options including numbers and symbols.">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,26 +14,27 @@
   <title>Simple Password Generator</title>
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <h1 class="title">Generate a<br><span class="g-title">random password</span></h1>
     <p class="tagline">Never use an insecure password again.</p>
     <div class="wrapper">
       <button id="generate-btn">Generate passwords</button>
       <div class="options">
         <div class="slider-container">
-          <input type="range" min="10" max="20" value="15" class="slider" id="pw-length-slider">
-          <p>Length: <span id="password-length"></span></p>
+          <label for="pw-length-slider">Length:</label>
+          <input type="range" id="pw-length-slider" min="10" max="20" value="15" class="slider">
+          <span id="password-length"></span>
         </div>
         <div class="switches-container">
           <div class="switch-wrapper">
-            <p>Use numbers:</p>
+            <label for="numbers-switch" class="label-text">Use numbers:</label>
             <label class="switch">
               <input type="checkbox" id="numbers-switch" checked>
               <span class="switch-slider round"></span>
             </label>
           </div>
           <div class="switch-wrapper">
-            <p>Use symbols:</p>
+            <label for="symbols-switch" class="label-text">Use symbols:</label>
             <label class="switch">
               <input type="checkbox" id="symbols-switch" checked>
               <span class="switch-slider round"></span>
@@ -45,7 +48,7 @@
       <div class="password" id="pw2"></div>
     </div>
     <p id="click-to-copy">&nbsp;</p>
-  </div>
+  </main>
   <footer>
       <p>Built with ❤️ by @BobbyBuildr</p>
       <ul class="social-links">
